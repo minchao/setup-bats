@@ -18,12 +18,12 @@ jobs:
     steps:
 
       - name: Setup BATS
-        uses: mig4/setup-bats@v1
+        uses: mig4/setup-bats@v2
         with:
           bats-version: 1.2.1
 
       - name: Check out code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Test
         run: bats -r .
